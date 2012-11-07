@@ -1,0 +1,116 @@
+#colorBar {
+	display: block;
+	margin: 0px auto;
+	top: 0px;
+	text-align: center;
+	overflow: hidden;
+	background-image: url("images/color.png");
+	background-size: 900px;
+	background-repeat:no-repeat;
+	background-position:center;
+	height: 150px;
+}
+
+#colorBar ul {
+	margin: 0px -30px;
+	padding: 0px;
+	list-style: none;
+	height: 198px;
+	line-height: 198px;
+	text-align: center;
+	white-space: nowrap;
+	display: inline-block;
+	background: url("images/dock-middle.png") bottom left repeat-x;
+}
+
+#colorBar ul:before,
+#colorBar ul:after {
+	content: "";
+	color: transparent;
+	display: inline-block;
+	width: 0px;
+	padding-top: 30px;
+	margin-top: -30px;
+	vertical-align: bottom;
+}
+
+#colorBar ul:before {
+
+	background: url("images/dock-left.png") bottom left repeat-x;
+} 
+
+#colorBar ul:after {
+	background: url("images/dock-right.png") bottom right repeat-x;
+}
+
+/* Dock Icons */
+#colorBar li {
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 13px;
+	padding: 0px;
+	position: relative;
+	overflow: visible;
+}
+
+#colorBar li.seperator {
+	background: url("images/dock-seperator.png") bottom left no-repeat;
+	width: 20px;
+	height: 158px;
+	position: relative;
+	vertical-align: bottom;
+}
+
+#colorBar li a {
+	height: 110px;
+	width: 48px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	vertical-align: bottom;
+	text-decoration: none;
+	background-image:url("images/emotionGroup/color.png');
+	white-space: normal;
+	letter-spacing: normal;	
+	line-height: 1.3em;
+	text-align: center;
+	font-family: Arial;
+	padding-top: 40px;
+	margin-bottom: 5px;
+	overflow: visible;
+}
+
+
+#colorBar li a span {
+	position: relative;
+	line-height: 1.3em;
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 80%;
+	color: black;
+	padding: 4px 12px;
+	background-color: #EEE;
+	opacity: 0.6;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";	
+	margin: 0px auto;	
+	top: -38px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#colorBar li a:hover span {
+	display: inline-block;
+}
+
+
+#colorBar li a img {
+	
+	box-reflect: below 1px gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255,255,255,0.1)));
+	-webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255,255,255,0.1)));
+	-moz-box-reflect: below 1px -moz-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255,255,255,0.1)));
+}
+
+	
+	
